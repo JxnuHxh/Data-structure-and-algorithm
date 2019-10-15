@@ -45,7 +45,7 @@ public class Question1 {
     }
 
     public static void main(String[] args) {
-        int[] nums={0,1,3,50,75};
+        int[] nums={0,1,3,34,50,75,88};
         List<String> rst=findMissingRanges(nums,0,99);
         System.out.println(rst.toString());
     }
