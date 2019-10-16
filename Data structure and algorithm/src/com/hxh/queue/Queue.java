@@ -1,14 +1,13 @@
 package com.hxh.queue;
 
-import com.hxh.stack.Stack;
-
+/*
 public class Queue {
     private static class Node{
         private int val ;
-        private Stack.Node next;
+        private Queue.Node next;
         private Node(int x){
             this.val=x;
-        }
+}
     }
     private Node head;
     private Node tail;
@@ -42,3 +41,4 @@ public class Queue {
         return value;
     }
 }
+*/
