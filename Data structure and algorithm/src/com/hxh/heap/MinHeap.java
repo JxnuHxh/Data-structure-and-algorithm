@@ -1,12 +1,9 @@
 package com.hxh.heap;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MinHeap {
     private int capacity = 10;
     private int  size = 0;
-    int[] size = 0;
     int[] items = new int[capacity];
     private int getParentIndex(int childIndex){
         return (childIndex-1)/2;
@@ -26,7 +23,7 @@ public class MinHeap {
     private boolean hasParent(int index){
         return getParentIndex(index)>=0;
     }
-    private int Left(int index){
+    private int leftChild(int index){
         return items[getLeftChildIndex(index)];
     }
     private int rightChilid(int index){
@@ -67,9 +64,28 @@ public class MinHeap {
         bubbleUp();
     }
     public void bubbleDown(){
+        int index =0;
+        while (hasLeftChild(index)){
+            int smallerChildIndex=getLeftChildIndex(index);
+            if(hasRightChild(index)&& rightChilid(index)<leftChild(index)){
+                    smallerChildIndex=getRightChildIndex(index);
+
+            }
+            if(items[index]<items[smallerChildIndex]){
+                break;
+            }else{
+                swap(index,smallerChildIndex);
+            }
+            index=smallerChildIndex;
+        }
 
     }
     public  void bubbleUp(){
+        int index = size-1 ;
+        while(hasParent(index)&&parent(index)>items[index]){
+            swap(getParentIndex(index),index);
+            index=getParentIndex(index);
+        }
 
 
     }
