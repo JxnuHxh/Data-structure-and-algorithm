@@ -1,7 +1,7 @@
 package com.hxh.leetcode;
 
 public class QuickSort {
-    public static void sort(int[] array){
+    /*public static void sort(int[] array){
         quicksort(array,0,array.length-1)
     }
     public static void quicksort(int[] array,int left,int right){
@@ -38,4 +38,5 @@ public class QuickSort {
         array[left] = array[right];
         array[right]=temp;
     }
+    */
 }
