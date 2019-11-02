@@ -13,4 +13,9 @@
 #### [05号替换空格](https://github.com/JxnuHxh/Data-structure-and-algorithm/blob/master/Data%20structure%20and%20algorithm/src/com/offer/offer05.text)  
 实现一个函数，把字符串中的每个空格替换成"%20"。  
 #### [06号 从尾到头打印链表](https://github.com/JxnuHxh/Data-structure-and-algorithm/blob/master/Data%20structure%20and%20algorithm/src/com/offer/offer06.text)  
-输入一个链表的头节点，从尾到头反过来打印出每个节点的值
+输入一个链表的头节点，从尾到头反过来打印出每个节点的值  
+  
+#### [07号 重建二叉树](https://github.com/JxnuHxh/Data-structure-and-algorithm/blob/master/Data%20structure%20and%20algorithm/src/com/offer/offer07.text)  
+输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
+假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入
+前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回
