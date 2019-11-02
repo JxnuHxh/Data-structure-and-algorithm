@@ -21,6 +21,6 @@ public class Solution {
                 }
             }
             return str.toString();
-        }  
+        }
 
 解法三：开辟一个新的字符串
