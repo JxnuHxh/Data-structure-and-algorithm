@@ -26,6 +26,9 @@
 ，因为3+5+3+7 = 18。但是，它不能进入方格（35,38），因为3+5+3+8 = 19。   
 请问该机器人能够达到多少个格子  ？  
 
-#### [15号 二叉树的深度](https://github.com/JxnuHxh/Data-structure-and-algorithm/blob/master/Data%20structure%20and%20algorithm/src/com/offer/offer55.text)  
+#### [55号 二叉树的深度](https://github.com/JxnuHxh/Data-structure-and-algorithm/blob/master/Data%20structure%20and%20algorithm/src/com/offer/offer55.text)  
 输入一棵二叉树，求该树的深度。从根结点到叶结点依次经过的结点（含根、叶结点）形成树的一条路径，
 最长路径的长度为树的深度。
+
+#### [65号 不用加减乘除做加法](https://github.com/JxnuHxh/Data-structure-and-algorithm/blob/master/Data%20structure%20and%20algorithm/src/com/offer/offer65.text)
+写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号
