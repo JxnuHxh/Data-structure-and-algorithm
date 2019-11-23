@@ -1,0 +1,26 @@
+
+
+解法一：用Java自带的函数
+public class Solution {
+    public String replaceSpace(StringBuffer str) {
+        return str.toString().replace(" ", "%20");
+    }
+}
+解法二：在当前字符串上进行替换。
+
+    先计算替换后的字符串需要多大的空间，并对原字符串空间进行扩容；
+    从后往前替换字符串的话，每个字符串只需要移动一次；
+    如果从前往后，每个字符串需要多次移动，效率较低。
+
+    public String replace(StringBuffer str) {
+            int n = str.length();
+            for(int i=0; i<n; i++) {
+                if(str.charAt(i) == ' ') {
+                    n += 2;
+                    str.replace(i, i+1, "%20");
+                }
+            }
+            return str.toString();
+        }
+
+解法三：开辟一个新的字符串

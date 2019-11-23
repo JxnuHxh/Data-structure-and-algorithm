@@ -1,0 +1,11 @@
+class Solution {
+    public int maxProfit(int[] prices, int fee) {
+        int c=0,h=-prices[0];
+        for(int i=0;i<prices.length;i++)
+        {
+            c=Math.max(c,h+prices[i]-fee);
+            h=Math.max(h,c-prices[i]);    
+        }
+        return c;
+    }
+}

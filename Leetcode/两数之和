@@ -1,0 +1,37 @@
+using System;
+using System.Linq;
+
+namespace 力扣
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Solution solution = new Solution();
+            int[] nums =new int[] { 2, 7, 11, 5 };
+            int[] a=new int[1];
+         a=solution.TwoSum(nums,9);
+            for (int j = 0; j <= 1; j++)
+            {
+                Console.Write("{0}\t",a[j]);
+            }
+
+        }
+
+    }
+    public class Solution
+    {
+        public int[] TwoSum(int[] nums, int target)
+        {
+            for (int i = 0; i < nums.Count(); i++)
+                for (int j = i + 1; j < nums.Count(); j++)
+                {
+                    if (nums[i] + nums[j] == target)
+                        return new int[] { i, j };
+                }
+            return null;
+        }
+
+    }
+
+}
