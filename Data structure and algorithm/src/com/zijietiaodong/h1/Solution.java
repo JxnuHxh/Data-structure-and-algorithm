@@ -5,6 +5,7 @@ package com.zijietiaodong.h1;
  * @version V1.0
  * @Package com.zijietiaodong.h1
  * @date 2020/2/6 15:02
+ * 两数之和  也可使用HashMap
  */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -14,17 +15,8 @@ public class Solution {
                 if(nums[i]+nums[j]==target){
                     result[0]=i;
                     result[1]=j;
-
                 }
-
             }
         return result;
-    }
-
-    public static void main(String[] args) {
-        Solution s=new Solution();
-        int[] nums={2, 7, 11, 15};
-        int[] n=s.twoSum( nums, 9);
-        System.out.println(n[0]+" "+n[1]);
     }
 }
