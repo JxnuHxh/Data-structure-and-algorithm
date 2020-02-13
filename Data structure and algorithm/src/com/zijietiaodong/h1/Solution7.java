@@ -10,6 +10,7 @@ import java.util.List;
  * @version V1.0
  * @Package com.zijietiaodong.h1
  * @date 2020/2/11 1:13
+ * 接雨水
  */
 public class Solution7 {
     public int trap(int[] height) {
@@ -40,6 +41,4 @@ public class Solution7 {
         }
         return max;
     }
-
-
 }
