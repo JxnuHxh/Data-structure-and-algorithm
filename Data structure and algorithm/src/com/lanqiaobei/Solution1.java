@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @Package com.lanqiaobei
  * @date 2020/2/28 0:36
  */
-public class Solutuion1 {
+public class Solution1 {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int x = sc.nextInt(); //定义自己在键盘中键入一个数字
