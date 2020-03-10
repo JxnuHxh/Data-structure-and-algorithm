@@ -29,6 +29,7 @@ public class Solution5 {
             }
             list.add(mod);                               //存储余数
         }
+
         if(mod==0||res.size()>=n+2){
             for(int i=0;i<3;i++){
                 if(n+i<=res.size())
