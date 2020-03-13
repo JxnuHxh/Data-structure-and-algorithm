@@ -16,8 +16,7 @@ public class Pro11 {
                 r = mid;
             } else if (numbers[r] < numbers[mid]) {
                 l = mid + 1;
-                //去重
-            } else r--;
+            } else r--;  //去重
         }
         return numbers[l];
     }
