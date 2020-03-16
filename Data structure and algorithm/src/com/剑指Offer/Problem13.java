@@ -8,7 +8,6 @@ package com.剑指Offer;
  */
 public class Problem13 {
     public int movingCount(int m, int n, int k) {
-
         int[][] visited = new int[m][n];
         return dfs(0, 0, m, n, visited, k);
     }
@@ -18,7 +17,8 @@ public class Problem13 {
             return 0;
         }
         visited[i][j] = 1;
-        return 1 + dfs(i + 1, j, m, n, visited, k) + dfs(i, j + 1, m, n, visited, k); //这里+1是因为默认0，0是可以访问到的
+        return 1 + dfs(i + 1, j, m, n, visited, k) + dfs(i, j + 1, m, n, visited, k);
+        //这里+1是因为默认0，0是可以访问到的
     }
 
     private int add(int a, int b) {
