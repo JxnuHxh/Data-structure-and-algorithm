@@ -11,7 +11,7 @@ import com.hxh.DFS.TreeNode;
 public class Problem28 {
     public boolean isSymmetric(TreeNode root) {
         if(root==null) return true;
-return recur(root.left,root.right);
+        return recur(root.left,root.right);
     }
     boolean recur(TreeNode l,TreeNode r){
         if(l==null&&r==null)return true;
