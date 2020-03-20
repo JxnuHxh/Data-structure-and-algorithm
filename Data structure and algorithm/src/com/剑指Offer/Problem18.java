@@ -8,7 +8,7 @@ import com.hxh.DG.ListNode;
  * @Package com.剑指Offer
  * @date 2020/3/20 11:46
  */
-public class Problem024 {
+public class Problem18 {
     public ListNode deleteNode(ListNode head, int val) {
         if(head.val == val) return head.next;
         ListNode pre = head, cur = head.next;
