@@ -8,7 +8,7 @@ package com.lanqiaobei;
  */
 import java.util.Scanner;
 
-public class Main {
+public class Solution10 {
     static int[][] input;
     static boolean maodun = false;
     static int[] judge;// 判断数组
