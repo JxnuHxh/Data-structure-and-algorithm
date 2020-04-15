@@ -64,18 +64,14 @@ public class Solution10 {
 
     private static void put(int i, int j) {
         maodun = false;// 防止递归操作受上一次影响
-
         if (judge[i] != j && judge[i] != -1)// 如果产生了矛盾
         {
             maodun = true;
             return;
         }
-
         if (judge[i] == j)// 如果已经放置
             return;
-
         judge[i] = j; // 放置
-
         for (int k = 1; k < input[0].length; k++) {
             if (input[i][k] == 1)
                 put(k, input[i][k]);
