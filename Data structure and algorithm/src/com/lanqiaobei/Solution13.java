@@ -2,7 +2,7 @@ package com.lanqiaobei;
 import java.util.Scanner;
 import java.util.Stack;
 /**
- * @author atom.hu
+ * @author 拉马车
  * @version V1.0
  * @Package com.lanqiaobei
  * @date 2020/4/16 22:48
