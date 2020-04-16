@@ -1,7 +1,6 @@
 package com.lanqiaobei;
 import java.util.Scanner;
 import java.util.Stack;
-
 /**
  * @author atom.hu
  * @version V1.0
@@ -17,8 +16,6 @@ public class Solution13 {
     }
     /**
      * 游戏开始
-     * @param strA
-     * @param strB
      */
     private static void game(String strA, String strB) {
         Stack<String> stack = new Stack<String>();
@@ -50,7 +47,6 @@ public class Solution13 {
                 break;
             }
         }
-
         if(strA.length() > strB.length()){   //输出手中有牌选手的手牌
             System.out.println(strA);
         }else{
@@ -59,10 +55,6 @@ public class Solution13 {
     }
     /**
      * 判断是否可赢牌
-     * @param stack
-     * @param a
-     * @param str
-     * @return
      */
     private static String isWin(Stack stack, String a, String str) {
         if(stack.search(a)>0){   //如果存在和a一样的牌
