@@ -1,15 +1,11 @@
 package com.lanqiaobei;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 /*
  * 假设 s-t这条路径为树的直径，或者称为树上的最长路
  * 现有结论，从任意一点u出发搜到的最远的点一定是s、t中的一点，然后在从这个最远点开始搜，就可以搜到另一个最长路的端点，
  * 即用两遍广搜就可以找出树的最长路
  */
-
-
 public class 大臣的旅费 {//单纯的用二维数组会超时，为什么用动态数组就不会内存了呢
 
     public static int[][] Map = new int[7010][7010];
