@@ -1,4 +1,5 @@
 package com.排序算法;
+//冒泡排序
 
 public class BubbleSort {
     private static  int[] bubbleSort(int[] arrays){
@@ -15,12 +16,5 @@ public class BubbleSort {
         }
 
         return arrays;
-    }
-
-    public static void main(String[] args) {
-       int[] a= BubbleSort.bubbleSort(new int[]{3,2,5,1,1,30,9,100,31,2});
-        for(int i=0;i<a.length;i++){
-            System.out.println(a[i]);
-        }
     }
 }
