@@ -9,7 +9,9 @@ import java.util.Scanner;
  * @date 2020/5/23 12:56
  */
 public class Main {
+
     public static void main(String[] args) {
+
         Scanner sc=new Scanner(System.in);
         int count=0;
         int n=sc.nextInt();

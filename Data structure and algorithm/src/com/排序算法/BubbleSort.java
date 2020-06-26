@@ -2,6 +2,7 @@ package com.排序算法;
 //冒泡排序
 
 public class BubbleSort {
+    public  static String str="fafa";
     private static  int[] bubbleSort(int[] arrays){
         int len=arrays.length;
         if (len<2)return arrays;
