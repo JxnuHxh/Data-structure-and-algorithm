@@ -1,15 +1,12 @@
 package com.leetCode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * @author atom.hu
  * @version V1.0
  * @Package com.剑指Offer
  * @date 2020/3/16 22:02
  */
-public class Problem42 {
+public class Leetcode42 {
         public int firstMissingPositive(int[] nums) {
             if (nums==null||nums.length==0)return 1;
             int temp=0;

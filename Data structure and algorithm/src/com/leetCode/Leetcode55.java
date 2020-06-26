@@ -2,7 +2,7 @@ package com.leetCode;
 
 import com.hxh.DFS.TreeNode;
 
-public class L55 {
+public class Leetcode55 {
     public boolean isBalanced(TreeNode root) {
         if(root==null)
             return true;

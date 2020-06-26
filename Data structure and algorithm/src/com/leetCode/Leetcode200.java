@@ -4,16 +4,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @author atom.hu
- *
- *
- *
  * BFS岛屿数量
  * @version V1.0
  * @Package com.leetCode
  * @date 2020/6/1 22:20
  */
-public class Leetcode岛屿数量 {
+public class Leetcode200 {
     public int numIslands(char[][] grid) {
         int result =0;
        for (int i=0; i<grid.length;i++){

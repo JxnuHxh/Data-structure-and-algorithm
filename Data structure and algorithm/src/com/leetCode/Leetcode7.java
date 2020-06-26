@@ -1,6 +1,6 @@
 package com.leetCode;
 
-public class L7 {
+public class Leetcode7 {
     public int reverse(int x) {
         long res = 0;
         while (x != 0) {

@@ -1,7 +1,7 @@
 package com.leetCode;
 
 import com.hxh.DG.ListNode;
-
+//合并两个有序链表
 public class Leetcode21 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode prehead = new ListNode(-1);

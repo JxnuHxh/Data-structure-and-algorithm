@@ -1,4 +1,4 @@
-package com;
+package com.lanqiaobei;
 
 import java.util.Scanner;
 

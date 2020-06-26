@@ -6,7 +6,7 @@ package com.leetCode;
  * @Package com.leetCode
  * @date 2020/5/26 21:50
  */
-public class L79 {
+public class Leetcode79 {
     private boolean[][] marked;
 
     //        x-1,y
@@ -78,7 +78,7 @@ public class L79 {
 
         char[][] board = {{'a', 'b'}};
         String word = "ba";
-        L79 solution = new L79();
+        Leetcode79 solution = new Leetcode79();
         boolean exist = solution.exist(board, word);
         System.out.println(exist);
     }

@@ -14,9 +14,4 @@ public class Leetcode3 {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        Leetcode3 leetcode3=new Leetcode3();
-        leetcode3.lengthOfLongestSubstring("ilaferdrdrdrs");
-    }
 }

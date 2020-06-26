@@ -1,5 +1,5 @@
 package com.leetCode;
-
+//返回最大子串和
 public class Leetcode53 {
     public int maxSubArray(int[] nums) {
         int res = nums[0];
