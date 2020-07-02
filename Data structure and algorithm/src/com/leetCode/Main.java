@@ -1,13 +1,12 @@
 package com.leetCode;
 
-import com.排序算法.BubbleSort;
-
+// Thread t1= new Thread(()->{
+//            System.out.println(Thread.currentThread().getName());
+//        },"线程1");
 public class Main {
     public static void main(String[] args) {
-     Thread t1= new Thread(()->{
-            System.out.println(Thread.currentThread().getName());
-        },"线程1");
-      String str=  BubbleSort.str;
-        System.out.println(str);
+    Leetcode41 leetcode41=new Leetcode41();
+    leetcode41.firstMissingPositive(new int[]{1,2,0});
+
     }
 }
