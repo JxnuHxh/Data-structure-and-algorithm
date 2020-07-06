@@ -1,4 +1,4 @@
-package com.hxh.DG;
+package com.entity;
 
 public class ListNode {
     public int val;

@@ -1,6 +1,6 @@
 package com.leetcode;
 
-import com.hxh.DG.ListNode;
+import com.entity.ListNode;
 //反转局部链表
 public class Leetcode92 {
     public ListNode reverseBetween(ListNode head, int m, int n) {

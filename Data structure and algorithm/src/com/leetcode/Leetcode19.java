@@ -1,7 +1,7 @@
 package com.leetcode;
 
 
-import com.hxh.DG.ListNode;
+import com.entity.ListNode;
 
 //删除链表的倒数第N个节点
 //精辟

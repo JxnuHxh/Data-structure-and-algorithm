@@ -1,6 +1,6 @@
 package com.bytedance;
 
-import com.hxh.DG.ListNode;
+import com.entity.ListNode;
 
 public class ByteDance10 {
     public ListNode reverseKGroup(ListNode head, int k) {

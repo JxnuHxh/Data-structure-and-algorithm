@@ -1,10 +1,10 @@
 package com.hxh.tree;
 
-public class TreeNode {
-    TreeNode left;
-    TreeNode right;
+public class Main {
+    Main left;
+    Main right;
     int val;
-    public TreeNode(int x)
+    public Main(int x)
     {
         this.val=x;
     }
@@ -13,7 +13,7 @@ public class TreeNode {
         if (value <= val) {
             // go toleft
             if (left == null) {
-                left = new TreeNode(value);
+                left = new Main(value);
 
             } else {
                 left.insert(value);
@@ -21,7 +21,7 @@ public class TreeNode {
         }else{
             if(right==null)
             {
-                right =new TreeNode(value);
+                right =new Main(value);
             }else{
                 right.insert(value);
             }

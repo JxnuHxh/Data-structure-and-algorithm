@@ -1,4 +1,4 @@
-package com.hxh.DFS;
+package com.entity;
 
 public class TreeNode {
     public int val;

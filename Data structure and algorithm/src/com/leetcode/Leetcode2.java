@@ -1,8 +1,9 @@
 package com.leetcode;
 
-import com.hxh.DG.ListNode;
+import com.entity.ListNode;
 
 public class Leetcode2 {
+
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode root = new ListNode(0);
         ListNode cursor = root;

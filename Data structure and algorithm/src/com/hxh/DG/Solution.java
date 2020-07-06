@@ -1,6 +1,7 @@
 package com.hxh.DG;
 
-import com.hxh.DFS.TreeNode;
+import com.entity.ListNode;
+import com.entity.TreeNode;
 
 /**
  * @author atom.hu

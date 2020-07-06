@@ -26,22 +26,6 @@ public class Offer40 {
     //特殊情况下，k等于数组长度。此时pivot < k始终成立，也就是pivot!=k
     //每趟处理后，必然有low = pivot + 1，也就是low必然会移动到满足low>=high
     //由于k等于数组长度，因此无论如何变动，取出的数组一定满足要求
-    private int partition(int[] nums,int low,int high){
-        int pivot = nums[low];
-        while(low < high){
-            while(low < high && nums[high] >= pivot)
-                --high;
-            nums[low] = nums[high];
-            while(low < high && nums[low] <= pivot){
-                ++low;
-                nums[high] = nums[low];
-            }
-            nums[high] = nums[low];
-        }
-        nums[low] = pivot;
-        return low;
-    }
-
     public int[] getLeastNumbers(int[] arr, int k) {
         int low = 0;
         int high = arr.length - 1;
@@ -52,5 +36,20 @@ public class Offer40 {
             if(pivot == k)  break;
         }
         return Arrays.copyOf(arr,k);
+    }
+    private int partition(int[] nums,int low,int high) {
+        int pivot = nums[low];
+        while (low < high) {
+            while (low < high && nums[high] >= pivot)
+                high--;
+            nums[low] = nums[high];
+            while (low < high && nums[low] <= pivot) {
+                ++low;
+                nums[high] = nums[low];
+            }
+            nums[high] = nums[low];
+        }
+        nums[low] = pivot;
+        return low;
     }
 }

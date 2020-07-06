@@ -1,6 +1,6 @@
 package com.leetcode;
 
-import com.hxh.DFS.TreeNode;
+import com.entity.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
  * @Package com.leetCode
  * @date 2020/1/12 12:13
  */
-public class Solution1 {
+public class Leetcode102 {
     List<List<Integer>> lists=new ArrayList<>();
     public List<List<Integer>> levelOrder(TreeNode root) {
         funtion(root,0);
