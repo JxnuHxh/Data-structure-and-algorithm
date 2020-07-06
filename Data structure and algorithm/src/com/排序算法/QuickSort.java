@@ -9,8 +9,8 @@ public class QuickSort {
         return array;
     }
     public static void sort(int[] array, int left, int right) {
-        if (left > right) {
-            return;
+        if(left>right){
+            return ;
         }
         // base中存放基准数
         int base = array[left];
