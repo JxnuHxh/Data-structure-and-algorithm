@@ -5,8 +5,8 @@ package com.leetCode;
 //        },"线程1");
 public class Main {
     public static void main(String[] args) {
-    Leetcode41 leetcode41=new Leetcode41();
-    leetcode41.firstMissingPositive(new int[]{1,2,0});
+    Leetcode378 leetcode378=new Leetcode378();
+    leetcode378.kthSmallest(new int[][]{{1,5,9},{10,11,13},{12,13,15}},8);
 
     }
 }
