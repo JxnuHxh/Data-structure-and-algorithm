@@ -1,4 +1,4 @@
-package com.剑指Offer;
+package com.entity;
 
 /**
  * @author atom.hu

@@ -1,6 +1,6 @@
 package com.hxh.queue;
 
-/*
+
 public class Queue {
     private static class Node{
         private int val ;
@@ -11,7 +11,7 @@ public class Queue {
     }
     private Node head;
     private Node tail;
-    public boolean isEmpty(){
+    public Node isEmpty(){
         return head=null;
 
     }
@@ -41,4 +41,3 @@ public class Queue {
         return value;
     }
 }
-*/
