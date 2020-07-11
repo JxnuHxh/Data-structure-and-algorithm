@@ -1,6 +1,8 @@
 package com.offer;
 
 
+import com.entity.TreeNode;
+
 import java.util.Arrays;
 
 public class Offer07 {

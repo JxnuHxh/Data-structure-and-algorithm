@@ -5,8 +5,8 @@ package com.leetcode;
 //        },"线程1");
 public class Main {
     public static void main(String[] args) {
-    Leetcode378 leetcode378=new Leetcode378();
-    leetcode378.kthSmallest(new int[][]{{1,5,9},{10,11,13},{12,13,15}},8);
+   Leetcode1013 leetcode1013=new Leetcode1013();
+   leetcode1013.canThreePartsEqualSum(new int[] {3,3,6,5,-2,2,5,1,-9,4});
 
     }
 }

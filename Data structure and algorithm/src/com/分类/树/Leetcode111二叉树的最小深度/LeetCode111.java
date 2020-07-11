@@ -1,5 +1,7 @@
 package com.分类.树.Leetcode111二叉树的最小深度;
 
+import com.entity.TreeNode;
+
 /**
  * @author atom.hu
  * @version V1.0

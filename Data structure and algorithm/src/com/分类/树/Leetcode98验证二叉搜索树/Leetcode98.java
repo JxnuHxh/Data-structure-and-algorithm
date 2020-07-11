@@ -1,5 +1,7 @@
 package com.分类.树.Leetcode98验证二叉搜索树;
 
+import com.entity.TreeNode;
+
 /**
  * @author atom.hu
  * @version V1.0

@@ -1,7 +1,9 @@
 package com.offer;
 
-        import java.util.LinkedList;
-        import java.util.Queue;
+import com.entity.TreeNode;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Offer55 {
     public int TreeDepth(TreeNode pRoot) {

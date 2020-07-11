@@ -1,5 +1,7 @@
 package com.bytedance;
 
+import com.entity.TreeNode;
+
 //合并二叉树
 public class ByteDance02 {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
