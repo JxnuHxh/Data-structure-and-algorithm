@@ -2,6 +2,7 @@ package com.leetcode;
 
 public class Leetcode410 {
     public int splitArray(int[] nums, int m) {
+        String r;
         int left = 0, right = 0;
         for (int i = 0; i < nums.length; i++) {
             right += nums[i];
