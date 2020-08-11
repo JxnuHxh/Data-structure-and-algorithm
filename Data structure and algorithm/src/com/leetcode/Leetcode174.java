@@ -9,7 +9,7 @@ public class Leetcode174 {
         for(int i=1;i<rows;i++){
             dungeon[i][0]=dungeon[i-1][0]+dungeon[i][0];
         }
-        for()
+
 
         return dungeon[rows-1][columns-1];
     }
