@@ -1,27 +1,22 @@
 package com.leetcode;
-
-/**
- * @author atom.hu
- * @version V1.0
- * @Package com.剑指Offer
- * @date 2020/3/16 22:02
- */
+//接雨水
 public class Leetcode42 {
-        public int firstMissingPositive(int[] nums) {
-            if (nums==null||nums.length==0)return 1;
-            int temp=0;
-            for (int i = 0; i < nums.length; i++) {
-                while (nums[i]>0&&nums[i]<nums.length&&nums[i]!=nums[nums[i]]){
-                    temp=nums[nums[i]];
-                    nums[nums[i]]=nums[i];
-                    nums[i]=temp;
-                }
+    public int trap(int[] height) {
+        if(height==null||height.length<1)return 0;
+        int sum=0;
+        int r=height.length-1,l=0;
+        int r_max=height[r],l_max=height[l];
+        while(l<r){
+            if(height[l]<height[r]){
+                l_max=Math.max(l_max,height[l+1]);
+                sum+=(l_max-height[l+1]);
+                l++;
+            }else{
+                r_max=Math.max(r_max,height[r-1]);
+                sum+=(r_max-height[r-1]);
+                r--;
             }
-            for (int i = 1; i < nums.length; i++) {
-                if (nums[i]!=i)return i;
-            }
-            if (nums[0]==nums.length)return nums.length+1;
-            return nums.length;
         }
+        return sum;
     }
-
+}
