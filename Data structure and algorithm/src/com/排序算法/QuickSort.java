@@ -39,4 +39,33 @@ public class QuickSort {
         sort(array, left, i - 1);
         sort(array, i + 1, right);
     }
+
+    //单边实现法
+    public static void quickSort(int[] arr,int startIndex,int endIndex){
+        //递归条件结束，startIndex和endIndex相遇
+        if (startIndex>=endIndex){
+            return;
+        }
+        //得到基准元素的位置
+        int pivorIndex=partition(arr,startIndex,endIndex);
+        //根据基准元素，分为两部分进行递归
+        quickSort(arr,startIndex,pivorIndex-1);
+        quickSort(arr,pivorIndex+1,endIndex);
+    }
+    private static int partition(int[] arr,int startIndex,int endIndex){
+        //取第一个位置的元素作为基准
+        int pivot=arr[startIndex];
+        int mark=startIndex;
+        for (int i = startIndex; i <=endIndex ; i++) {
+            if (arr[i]<pivot){
+                mark++;
+                int p=arr[mark];
+                arr[mark]=arr[i];
+                arr[i]=p;
+            }
+        }
+        arr[startIndex]=arr[mark];
+        arr[mark]=pivot;
+        return mark;
+    }
 }
