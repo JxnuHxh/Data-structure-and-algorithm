@@ -1,13 +1,36 @@
 package com.排序算法;
+
+import java.util.Scanner;
+
 //快排单边扫描
 public class Qk {
+
     public static void main(String[] args) {
-        int[] a=new int[]{3,1,2,9,2,3,89};
-        Qk.kps(0,a.length-1,a);
-        for(int c:a){
-            System.out.print(c+" ");
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        int password;
+        int N = scanner.nextInt();
+        int M = scanner.nextInt();
+
+        int[] arr = new int[N];
+        for (int i=0;i<M;i++){
+
+            int L = scanner.nextInt();
+            int R = scanner.nextInt();
+            for(int j=L;j<R;j++){
+                arr[j] = i+1;
+            }
+            arr[R] = i+1;
+
         }
+
+        for (int i=0;i<arr.length;i++){
+            sum+= i*arr[i];
+        }
+        password = sum % 100000009;
+        System.out.println(password);
     }
+
     //单边扫描
     private static void  kpd(int start,int end,int[] nums){
         if(start>end) return;
@@ -45,4 +68,5 @@ public class Qk {
         kps(start,i-1,nums);
         kps(i+1,end,nums);
     }
+
 }
