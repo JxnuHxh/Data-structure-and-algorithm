@@ -1,7 +1,7 @@
 package com.面试笔试;
 
 import com.entity.ListNode;
-
+//链表排序
 public class SortListNode {
     public static void main(String[] args) {
         ListNode head = new ListNode(9);

@@ -2,9 +2,7 @@ package com.面试笔试;
 
 public class Pacg01 {
     public static void main(String[] args) {
-
     System.out.println(Pacg01.bag3(10,new int[]{5,3,6,2,4},new int[] {5,2,3,4,5}, new int[] {1,3,1,2,3}));
-
     }
     //01背包
     public static int bag( int  w,int[] weight,int[] value ) {
