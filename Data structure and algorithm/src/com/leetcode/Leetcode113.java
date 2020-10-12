@@ -9,7 +9,6 @@ public class Leetcode113 {
     List<List<Integer>> res = new ArrayList<>();
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         if (root == null) return res;
-
         pathSum(root, sum, new ArrayList<Integer>());
         return res;
     }
@@ -19,7 +18,10 @@ public class Leetcode113 {
             res.add(path);
             return ;
         }
-        if (root.left != null) pathSum(root.left, sum-root.val, new ArrayList<Integer>(path));
-        if (root.right != null) pathSum(root.right, sum-root.val, new ArrayList<Integer>(path));
+        if (root.left != null)
+            pathSum(root.left, sum-root.val, new ArrayList<Integer>(path));
+        //这里关键 一定要new，不然永远是同一个
+        if (root.right != null)
+            pathSum(root.right, sum-root.val, new ArrayList<Integer>(path));
     }
 }
